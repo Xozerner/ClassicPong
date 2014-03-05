@@ -175,7 +175,7 @@ void runPhysics() {
 
 	if (ball.x <= leftPaddle.x + leftPaddle.width) {
 		float ballCentre = ball.y + (ball.width / 2);
-		printf("%f %f\n", ballCentre, leftPaddle.y);
+		//printf("%f %f\n", ballCentre, leftPaddle.y);
 		if (ballCentre > leftPaddle.y && ballCentre <= leftPaddle.y + leftPaddle.height) {
 			float yOffset = ballCentre - leftPaddle.y;
 			ball.motionX = getHorizBallSpeedRebound(yOffset);
@@ -183,14 +183,14 @@ void runPhysics() {
 			ball.x = leftPaddle.x + leftPaddle.width + 1;
 		}
 		if (ball.x <= 0) {
-			printf("Left loses\n");
+			printf("Player 2 Wins\n");
 			handleLose(LEFT_SIDE);
 		}
 	}
 
 	if (ball.x + ball.width >= rightPaddle.x) {
 		float ballCentre = ball.y + (ball.width / 2);
-		printf("%f %f\n", ballCentre, leftPaddle.y);
+		//printf("%f %f\n", ballCentre, leftPaddle.y);
 		if (ballCentre > rightPaddle.y && ballCentre <= rightPaddle.y + rightPaddle.height) {
 			float yOffset = ballCentre - rightPaddle.y;
 			ball.motionX = -1 * getHorizBallSpeedRebound(yOffset);
@@ -198,7 +198,7 @@ void runPhysics() {
 			ball.x = rightPaddle.x - 1 - ball.width;
 		}
 		if (ball.x + ball.width >= FIELD_WIDTH) {
-			printf("Right loses\n");
+			printf("Player 1 Wins\n");
 			handleLose(RIGHT_SIDE);
 		}
 	}
