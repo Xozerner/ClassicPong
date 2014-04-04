@@ -20,7 +20,7 @@ in the Software without restriction, including without limitation the rights<br/
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br/>
 copies of the Software, and to permit persons to whom the Software is<br/>
 furnished to do so, subject to the following conditions:<br/>
-The above copyright notice and this permission notice shall be included in all<br/>
+The above copyright (I was here!) notice and this permission notice shall be included in all<br/>
 copies or substantial portions of the Software.<br/>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br/>
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br/>
